@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Garaje";
+  src: url("Garaje0703-3503Trial-VAR.ttf");
+}
+
+/*@keyframes change{
+  0%{
+    font-variation-settings: "wght" 200;
+  }
+}
+  
+  */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Garaje", sans-serif;
+  font-variation-settings: "wght" 1000;
+  line-height: normal;
+  font-size: calc(1.5rem + 5vw);
+  letter-spacing: 5px;
+  color: #333;
+  background: #000;
+  /*
+  animation-name:change
+  animation-duration:5s
+  animation-direction:alternate
+  animation-iteration-count: infinite
+  */
+}
+
+canvas {
+  border: 0;
+  background: #eee;
+}
