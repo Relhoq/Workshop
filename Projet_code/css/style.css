@@ -1,8 +1,17 @@
 @font-face {
-  font-family: "Garaje";
-  src: url("Garaje0703-3503Trial-VAR.ttf");
+  font-family: "Garaje", "Theinhard";
+  src: url("Garaje 0703-3503 VAR.woff2");
+}
+/*
+@font-face {
+  font-family: "TheinhardMED";
+  src: url("TheinhardtMed.woff2");
 }
 
+@font-face {
+  font-family: "TheinhardREG";
+  src: url("TheinhardtReg.woff2");
+}
 /*@keyframes change{
   0%{
     font-variation-settings: "wght" 200;
@@ -14,7 +23,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Garaje", sans-serif;
   font-variation-settings: "wght" 1000;
   line-height: normal;
   font-size: calc(1.5rem + 5vw);
