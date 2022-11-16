@@ -3,6 +3,10 @@
   src: url("Garaje 0703-3503 VAR.woff2");
 }
 
+<<<<<<< Updated upstream
+=======
+/*
+>>>>>>> Stashed changes
 @font-face {
   font-family: "TheinhardMED";
   src: url("TheinhardtMed.woff2");
@@ -22,8 +26,12 @@
   */
 html,
 body {
+<<<<<<< Updated upstream
   background-color: transparent;
   font-family: Garaje, TheinhardMED, TheinhardREG;
+=======
+  background-color: white;
+>>>>>>> Stashed changes
   margin: 0;
   padding: 0;
   font-variation-settings: "wght" 1000;
