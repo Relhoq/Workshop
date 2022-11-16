@@ -41,3 +41,17 @@ canvas {
   border: 0;
   background: #eee;
 }
+
+@media only screen and (max-width:400px)
+{
+  .card{
+  width: 90%;
+  height: 90%
+}
+  /* section{
+    padding: 40px;
+  }
+  header{
+    padding: 20px 40px
+  } */
+}
