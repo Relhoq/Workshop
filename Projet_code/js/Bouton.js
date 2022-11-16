@@ -12,7 +12,7 @@ class Button {
     this.ctx.fillRect(this.x, y, this.width, height);
 
     this.ctx.save();
-    this.ctx.fillStyle = "white";
+    this.ctx.fillStyle = "black";
     this.ctx.strokeStyle = "black";
     this.ctx.font = `` + this.size + `pt Garaje`;
     this.ctx.textAlign = "center";
