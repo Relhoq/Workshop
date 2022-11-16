@@ -19,7 +19,7 @@ class App {
 
     const texte = new Text(this.ctx, "IS CODING FUN?", 100);
 
-    //boom boom boom
+
     this.ctx.save();
     this.ctx.translate(x, y);
     this.ctx.rotate(2 * Math.PI);
