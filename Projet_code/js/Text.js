@@ -6,8 +6,8 @@ class Text {
   }
 
   draw(x, y) {
-    this.ctx.fillStyle = "black";
-    this.ctx.strokeStyle = "black";
+    this.ctx.fillStyle = "white";
+    this.ctx.strokeStyle = "white";
     this.ctx.font = `` + this.size + `pt Garaje`;
     this.ctx.textAlign = "center";
     this.ctx.textBaseline = "middle";

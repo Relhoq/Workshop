@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Garaje", "Theinhard";
+  font-family: "Garaje";
   src: url("Garaje 0703-3503 VAR.woff2");
 }
 /*
@@ -39,15 +39,14 @@ body {
 
 canvas {
   border: 0;
-  background: #eee;
+  background: #000;
 }
 
-@media only screen and (max-width:400px)
-{
-  .card{
-  width: 90%;
-  height: 90%
-}
+@media only screen and (max-width: 400px) {
+  .card {
+    width: 90%;
+    height: 90%;
+  }
   /* section{
     padding: 40px;
   }

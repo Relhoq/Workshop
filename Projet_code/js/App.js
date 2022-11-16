@@ -10,8 +10,9 @@ class App {
     this.ctx = this.canvas.getContext("2d");
     this.texte = new Text(this.ctx, "IS CODING FUN?", 600 * this.pixelRatio);
     this.boutons = [];
-    this.bouton1 = new Button("ZOOM", this.ctx, 40 * this.pixelRatio);
-    this.bouton2 = new Button("ROTATE", this.ctx, 40 * this.pixelRatio);
+    this.textBouton = ["zoom", "rotate"];
+    //this.bouton1 = new Button(this.ctx, "ZOOM", 20 * this.pixelRatio);
+    //this.bouton2 = new Button(this.ctx, "ROTATE", 20 * this.pixelRatio);
     this.setup();
   }
 
@@ -32,18 +33,18 @@ class App {
       false
     );*/
 
-    /*
-    let buttonWidth = this.canvas.width / 5;
-    for (let i = buttonWidth; i < this.canvas.width / 2; i += buttonWidth) {
+    let buttonWidth = this.canvas.width / 2;
+    for (let i = 0; i < 2; i++) {
       const bouton = new Button(
-        "zoom",
         this.ctx,
-        40 * this.pixelRatio,
-        buttonWidth + i
+        this.textBouton[i],
+        15 * this.pixelRatio,
+        buttonWidth * i,
+        buttonWidth
       );
 
       this.boutons.push(bouton);
-    }*/
+    }
 
     this.draw();
   }
@@ -58,32 +59,28 @@ class App {
     this.texte.draw(0, 0);
     this.ctx.restore();
 
-    let yBouton = this.canvas.height - 200 * this.pixelRatio;
+    let boutonHeight = this.canvas.width / 5;
+    let yBouton = this.canvas.height - this.canvas.width / 5;
+    this.boutons.forEach((bouton) => {
+      bouton.drawButton(yBouton, boutonHeight);
+    });
 
+    /*
     let boutonWidth = this.canvas.width / 5;
+    
+  
     this.ctx.save();
-    this.bouton1.drawButton(
-      boutonWidth,
-      yBouton,
-
-      boutonWidth / 2,
-      150,
-      boutonWidth,
-      this.pixelRatio
-    );
+    this.bouton1.drawButton(boutonWidth, yBouton, boutonWidth, boutonHeight);
 
     this.bouton2.drawButton(
       this.canvas.width / 2 + boutonWidth / 2,
       yBouton,
-
-      boutonWidth / 2,
-      150,
       boutonWidth,
-      this.pixelRatio
+      boutonHeight
     );
 
     this.ctx.restore();
-
+*/
     requestAnimationFrame(this.draw.bind(this));
   }
 }
