@@ -14,8 +14,8 @@ class App {
   }
 
   setup() {
-    let x = window.innerWidth / 2;
-    let y = window.innerHeight / 2;
+    let x = this.canvas.width / 2;
+    let y = this.canvas.height / 2;
 
     const texte = new Text(this.ctx, "IS CODING FUN?", 100);
 
@@ -23,8 +23,7 @@ class App {
     this.ctx.save();
     this.ctx.translate(x, y);
     this.ctx.rotate(2 * Math.PI);
-    texte.drawText(200 / 2, 200 / 2);
-
+    texte.drawText(0, 0);
     this.ctx.restore();
   }
 }
