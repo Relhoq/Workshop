@@ -2,7 +2,7 @@
   font-family: "Garaje";
   src: url("Garaje 0703-3503 VAR.woff2");
 }
-/*
+
 @font-face {
   font-family: "TheinhardMED";
   src: url("TheinhardtMed.woff2");
@@ -19,11 +19,13 @@
 }
   
   */
-html,
+html {
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
-  font-variation-settings: "wght" 1000;
+  font-variation-settings: "wght" 500, "wdth" 1500, "slnt" 00;
   line-height: normal;
   font-size: calc(1.5rem + 5vw);
   letter-spacing: 5px;
@@ -35,6 +37,101 @@ body {
   animation-direction:alternate
   animation-iteration-count: infinite
   */
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "TheinhardMED";
+}
+.container {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 92vh;
+  left: 7vh;
+}
+.container a {
+  padding: 0px;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.container2 {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 92vh;
+  left: 90vh;
+}
+.container2 a {
+  padding: 0px;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.open {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+.modal-bg {
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+.modal-container {
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  padding: 30px;
+}
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  outline: none;
+  appearance: none;
+  color: red;
+  background: none;
+  border: 0px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.popup {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  background-image: url(../background.png);
+  background-size: contain;
+}
+.text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 canvas {
