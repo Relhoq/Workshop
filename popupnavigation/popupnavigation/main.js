@@ -1,108 +1,112 @@
 // prompt, alert, confirm
 
 // const initialTransform = 'matrix(10, 0, 0, 10, 0, 0)'
-const initialTransform = 'matrix(-10, 1.2246467991473533e-15, -1.2246467991473533e-15, -10, 0, 0)'
+const initialTransform =
+  "matrix(-10, 1.2246467991473533e-15, -1.2246467991473533e-15, -10, 0, 0)";
 
-const imageSrc = { tree: "tree.jpeg", poster: "poster.svg" }
-let frameCount = 0
+const imageSrc = {
+  tree: "tree.jpeg",
+  poster: "poster.svg",
+  template: "FORMAT.jpg",
+};
+let frameCount = 0;
 
-const images = Object.fromEntries(Object.entries(imageSrc).map(([name, src]) => {
+const images = Object.fromEntries(
+  Object.entries(imageSrc).map(([name, src]) => {
+    const img = new Image();
+    img.src = `images/${src}`;
 
-    const img = new Image()
-    img.src = `images/${src}`
-
-    return [name, img]
-}))
+    return [name, img];
+  })
+);
 
 console.log(images);
 
-const cv = document.querySelector('#canvas')
-const c = cv.getContext('2d')
-let width, height
+const cv = document.querySelector("#canvas");
+const c = cv.getContext("2d");
+let width, height;
 
-const IMAGE = images.poster
-IMAGE.classList.add('poster')
+cv.width = innerWidth;
+cv.height = innerHeight;
 
-document.body.appendChild(IMAGE)
+const IMAGE = images.template;
+IMAGE.classList.add("poster");
 
-resizeCanvas()
+document.body.appendChild(IMAGE);
 
-requestAnimationFrame(animate)
+resizeCanvas();
 
-document.querySelector('#rotate').onclick = () => {
-    scenarios.askToTurnBy(180)
-    // const angle = prompt('rotate ?')
+requestAnimationFrame(animate);
 
-    // if (angle !== null) {
-    //     rotate(toRadians(angle))
-    // }
+document.querySelector("#rotate").onclick = () => {
+  scenarios.askToTurnBy(180);
+  // const angle = prompt('rotate ?')
+
+  // if (angle !== null) {
+  //     rotate(toRadians(angle))
+  // }
 };
 
-document.querySelector('#zoom').onclick = () => {
-    // const value = prompt('Zoom')
-    // console.log(value);
-    scenarios.meteo()
+document.querySelector("#zoom").onclick = () => {
+  // const value = prompt('Zoom')
+  // console.log(value);
+  scenarios.meteo();
 };
-document.querySelector('#answer').onclick = () => {
-    // const value = prompt('Zoom')
-    // console.log(value);
-    scenarios.iknow()
+document.querySelector("#answer").onclick = () => {
+  // const value = prompt('Zoom')
+  // console.log(value);
+  scenarios.iknow();
 };
 
 function animate() {
+  c.save();
+  c.resetTransform();
+  c.fillStyle = "red";
+  c.fillRect(0, 0, width, height);
+  c.restore();
 
-    c.save()
-    c.resetTransform()
-    c.fillStyle = 'red'
-    c.fillRect(0, 0, width, height)
-    c.restore()
+  c.drawImage(images.tree, 0, 0);
+  setTransform(c.getTransform(cv.width, cv.height));
 
-    // setTransform(c.getTransform())
+  if (frameCount === 0) {
+    //setTransform(new DOMMatrix(initialTransform));
+  }
 
-    c.drawImage(images.tree, 0, 0)
+  frameCount++;
 
-    if (frameCount === 0) {
-        setTransform(new DOMMatrix(initialTransform));
-    }
-
-    frameCount++;
-
-    requestAnimationFrame(animate)
+  requestAnimationFrame(animate);
 }
 
 function resizeCanvas() {
-    cv.width = innerWidth
-    cv.height = innerHeight
-
-    width = innerWidth
-    height = innerHeight
+  width = innerWidth;
+  height = innerHeight;
 }
 
 function translate() {
-    c.translate(...arguments) // spread operator
-    applyTransform()
+  c.translate(...arguments); // spread operator
+  applyTransform();
 }
 function rotate(angle) {
-    c.rotate(toRadians(angle)) // spread operator
-    applyTransform()
+  c.rotate(toRadians(angle)); // spread operator
+  applyTransform();
 }
 function scale() {
-    c.scale(...arguments) // spread operator
-    applyTransform()
+  c.scale(...arguments); // spread operator
+  applyTransform();
 }
 
 function setTransform() {
-    c.setTransform(...arguments) // spread operator
-    applyTransform()
+  c.setTransform(...arguments); // spread operator
+  applyTransform();
 }
 
 function getTransform() {
-    const matrix = c.getTransform()
-    console.log(matrix.toString());
-    return matrix
+  const matrix = c.getTransform();
+  console.log(matrix.toString());
+  return matrix;
 }
 
 function applyTransform() {
-    const matrix = getTransform()
-    IMAGE.style.transform = matrix.toString();
+  const matrix = getTransform();
+  IMAGE.style.transform = matrix.toString();
 }

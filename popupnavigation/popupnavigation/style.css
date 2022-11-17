@@ -14,8 +14,43 @@ body {
   z-index: 1000;
 }
 
-button {
+#rotate {
+  position: absolute;
   transform: scale(2);
+  background-color: rgb(84, 84, 84);
+  width: 100px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  top: 95px;
+  color: white;
+  cursor: pointer;
+}
+
+#zoom {
+  position: absolute;
+  transform: scale(2);
+  background-color: rgb(84, 84, 84);
+  width: 100px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  bottom: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+#answer {
+  position: absolute;
+  transform: scale(2);
+  background-color: rgb(84, 84, 84);
+  width: 100px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  top: 300px;
+  color: white;
+  cursor: pointer;
 }
 
 #canvas {
