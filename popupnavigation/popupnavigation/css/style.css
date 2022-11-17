@@ -23,54 +23,65 @@ body {
   text-align: center;
   font-size: 70px;
   font-family: "TheinhardMed";
-  background-color: white;
+  top: 39px;
+  position: fixed;
+  background-color: transparent;
 }
 
 .controls {
   position: fixed;
   top: 0;
   left: 0;
-
   z-index: 1000;
 }
 
 #rotate {
-  position: absolute;
   transform: scale(2);
   background-color: rgb(84, 84, 84);
-  width: 100px;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  top: 95px;
+  width: 49px;
+  height: 10px;
+
+  text-align: center;
+  font-size: 6pt;
+  font-family: "TheinhardMed";
+  top: 95vh;
+  right: 9vh;
   color: white;
   cursor: pointer;
+  position: fixed;
 }
 
 #zoom {
-  position: absolute;
   transform: scale(2);
   background-color: rgb(84, 84, 84);
-  width: 100px;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  bottom: 30px;
+  width: 49px;
+  height: 10px;
+  padding: 0%;
+  font-size: 6pt;
+  font-family: "TheinhardMed";
+  text-align: center;
+  top: 95vh;
+  left: 9vh;
   color: white;
   cursor: pointer;
+  position: fixed;
 }
 
 #answer {
-  position: absolute;
   transform: scale(2);
   background-color: rgb(84, 84, 84);
-  width: 100px;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  top: 300px;
+  width: 147px;
+  height: 13px;
+  padding: 0%;
+  margin: 0%;
+  font-size: 6pt;
+  font-family: "TheinhardMed";
+  text-align: center;
+  top: 4vh;
+  left: 14vh;
   color: white;
   cursor: pointer;
+  position: fixed;
 }
 
 #canvas {
