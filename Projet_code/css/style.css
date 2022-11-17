@@ -3,10 +3,6 @@
   src: url("Garaje 0703-3503 VAR.woff2");
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-=======
 /*
 >>>>>>> Stashed changes
 >>>>>>> f52a5aec142bfafa617d7f9d9700a6d19af61930
@@ -27,16 +23,10 @@
 }
   
   */
-html {
-  height: 100%;
-}
+html,
 body {
-<<<<<<< Updated upstream
   background-color: transparent;
   font-family: Garaje, TheinhardMED, TheinhardREG;
-=======
-  background-color: white;
->>>>>>> Stashed changes
   margin: 0;
   padding: 0;
   font-variation-settings: "wght" 500, "wdth" 1500, "slnt" 00;
@@ -44,7 +34,6 @@ body {
   font-size: calc(1.5rem + 5vw);
   letter-spacing: 5px;
   color: #333;
-  background: #000;
   background: transparent;
   /*
   animation-name:change
@@ -148,38 +137,29 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
-.container{
+/*
+.container3 {
+  position: absolute;
   width: 800px;
   margin: auto;
   color: black;
   text-align: center;
   background-color: transparent;
 }
-
-h1,h2,h3{
-  font-family:Garaje, TheinhardMED, TheinhardREG;
-  font-weight: 100;
-  font: size 2.6rem;
-  text-transform: capitalize;
-}
-
+*/
 #seconds,
-#tens{
+#tens {
   font: size 2em;
 }
 
-
 canvas {
-  border: 0;
-  background: #000;
-  background: transparent
+  background: transparent;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 0px) {
   .card {
-    width: 90%;
-    height: 90%;
+    width: 0%;
+    height: 0%;
   }
   /* section{
     padding: 40px;

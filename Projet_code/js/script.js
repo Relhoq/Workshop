@@ -6,6 +6,6 @@ addEventListener("load", (event) => {
   function addpopup() {
     document.getElementsByClassName("popup-container")[0].innerHTML =
       document.getElementsByClassName("popup-container")[0].innerHTML +
-      '<div class="popup"><div class="text">lsdél</div></div>';
+      '<div class="popup"><div class="text">haha</div></div>';
   }
 });
