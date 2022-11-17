@@ -42,13 +42,13 @@ function initCountdown(e) {
       } else {
         hundExt = hund;
       }
-      if (min > 10) {
+      if (min > 0) {
         minExt = "0" + min;
       } else {
         minExt = min;
       }
 
-      divCountdown.innerHTML = min + ":" + secExt + ":" + hundExt;
+      divCountdown.innerHTML = minExt + ":" + secExt + ":" + hundExt;
     }
   }
 }
