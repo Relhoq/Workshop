@@ -48,7 +48,7 @@ function initCountdown(e) {
         minExt = min;
       }
 
-      divCountdown.innerHTML = min + ":" + secExt + ":" + hundExt;
+      divCountdown.innerHTML = minExt + ":" + secExt + ":" + hundExt;
     }
   }
 }
