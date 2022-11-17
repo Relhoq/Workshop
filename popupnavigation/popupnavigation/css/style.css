@@ -22,7 +22,6 @@ body {
   height: 100px;
   text-align: center;
   font-size: 70px;
-<<<<<<< Updated upstream
   font-family: "TheinhardMed";
   color: white;
   text-shadow: 
@@ -37,11 +36,9 @@ body {
   /* font position */
   top: 53px;
   position: fixed;
-=======
   font-style: normal;
   top:39px;
   font-family: "TheinhardMed";
->>>>>>> Stashed changes
 }
 
 .controls {
