@@ -17,7 +17,7 @@ body {
 }
 
 #divCountdown {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #141e30;
@@ -28,14 +28,15 @@ body {
   font-size: 70px;
   font-style: normal;
   font-family: "TheinhardMed";
-<<<<<<< HEAD
   top: 53px;
-  color:white;
+  color: white;
   position: fixed;
   background-color: transparent;
   font-weight: 900;
-  text-shadow: 0px 0px 0px #9b9a9a, 0px 1px 0px #b1b1b1, 0px 2px 1px #b1b1b1, 0px 3px 1px #b1b1b1, 0px 5px 1px #968e8e,0px 6px 1px #808080,0px 7px 1px #5f5f5f,0px 8px 30px #000;
-  outline:none;
+  text-shadow: 0px 0px 0px #9b9a9a, 0px 1px 0px #b1b1b1, 0px 2px 1px #b1b1b1,
+    0px 3px 1px #b1b1b1, 0px 5px 1px #968e8e, 0px 6px 1px #808080,
+    0px 7px 1px #5f5f5f, 0px 8px 30px #000;
+  outline: none;
 }
 
 #divCountdown1 {
@@ -47,13 +48,12 @@ body {
   font-style: normal;
   font-family: "TheinhardMed";
   top: 53px;
-  color:transparent;
+  color: transparent;
   position: fixed;
   background-color: transparent;
   font-weight: 900;
   text-shadow: 5px 4px 7px rgb(200, 200, 200);
-  outline:none;
-=======
+  outline: none;
   top: 39px;
   position: fixed;
   background-color: transparent;
@@ -61,7 +61,6 @@ body {
   border-radius: 15px;
   box-shadow: -15px -15px 15px (rgba(200, 200, 200, 0.2), 15px 15px 15px
         rgba(0, 0, 0, 0.1));
->>>>>>> 2aaf6361d73ae25e92084581e3b4cab371a644c6
 }
 
 .controls {
@@ -87,7 +86,6 @@ body {
   position: fixed;
 }
 
-#zoom {
 #move {
   transform: scale(2);
   background-color: rgb(200, 200, 200);
@@ -95,11 +93,7 @@ body {
   height: 10px;
   height: 16px;
   padding: 0%;
-<<<<<<< HEAD
   font-size: 7pt;
-=======
-  font-size: 6pt;
->>>>>>> 2aaf6361d73ae25e92084581e3b4cab371a644c6
   font-family: "TheinhardMed";
   text-align: center;
   top: 95vh;
