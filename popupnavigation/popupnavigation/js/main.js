@@ -47,7 +47,8 @@ document.querySelector("#rotate").onclick = () => {
   // }
 };
 
-document.querySelector("#zoom").onclick = () => {
+document.querySelector("#move").onclick = () => {
+  initCountdown(120);
   // const value = prompt('Zoom')
   // console.log(value);
   scenarios.meteo();
