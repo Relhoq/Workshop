@@ -1,10 +1,10 @@
 @font-face {
-  font-family:"TheinhardMed";
+  font-family: "TheinhardMed";
   src: url("TheinhardtMed.woff2");
 }
 
 @font-face {
-  font-family:"TheinhardReg";
+  font-family: "TheinhardReg";
   src: url("TheinhardtReg.woff2");
 }
 
@@ -16,13 +16,13 @@ body {
   overflow: hidden;
 }
 
-#divCountdown{
+#divCountdown {
   margin: auto;
   width: 375px;
   height: 90px;
   text-align: center;
   font-size: 70px;
-  font-family:"TheinhardMed";
+  font-family: "TheinhardMed";
   background-color: white;
 }
 
