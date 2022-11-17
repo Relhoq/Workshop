@@ -42,7 +42,7 @@ function initCountdown(e) {
       } else {
         hundExt = hund;
       }
-      if (min > 0) {
+      if (min > 10) {
         minExt = "0" + min;
       } else {
         minExt = min;
