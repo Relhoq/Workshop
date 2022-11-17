@@ -28,6 +28,7 @@ body {
   font-size: 70px;
   font-style: normal;
   font-family: "TheinhardMed";
+<<<<<<< HEAD
   top: 53px;
   color:white;
   position: fixed;
@@ -52,6 +53,15 @@ body {
   font-weight: 900;
   text-shadow: 5px 4px 7px rgb(200, 200, 200);
   outline:none;
+=======
+  top: 39px;
+  position: fixed;
+  background-color: transparent;
+  text-shadow: 5px 5px 5px pink;
+  border-radius: 15px;
+  box-shadow: -15px -15px 15px (rgba(200, 200, 200, 0.2), 15px 15px 15px
+        rgba(0, 0, 0, 0.1));
+>>>>>>> 2aaf6361d73ae25e92084581e3b4cab371a644c6
 }
 
 .controls {
@@ -66,6 +76,7 @@ body {
   background-color: rgb(200, 200, 200);
   width: 49px;
   height: 10px;
+  height: 16px;
   text-align: center;
   font-size: 7pt;
   font-family: "TheinhardMed";
@@ -77,12 +88,18 @@ body {
 }
 
 #zoom {
+#move {
   transform: scale(2);
   background-color: rgb(200, 200, 200);
   width: 49px;
   height: 10px;
+  height: 16px;
   padding: 0%;
+<<<<<<< HEAD
   font-size: 7pt;
+=======
+  font-size: 6pt;
+>>>>>>> 2aaf6361d73ae25e92084581e3b4cab371a644c6
   font-family: "TheinhardMed";
   text-align: center;
   top: 95vh;
@@ -97,12 +114,14 @@ body {
   background-color: rgb(200, 200, 200);
   width: 147px;
   height: 13px;
+  height: 16px;
   padding: 0%;
   margin: 0%;
   font-size: 6pt;
   font-family: "TheinhardMed";
   text-align: center;
   top: 4vh;
+  top: 3vh;
   left: 14vh;
   color: white;
   cursor: pointer;
