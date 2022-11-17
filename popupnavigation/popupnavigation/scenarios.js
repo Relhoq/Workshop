@@ -13,7 +13,7 @@ const scenarios = {
     },
     meteo() {
         let yes = false
-        yes = confirm('Is it raining oustide')
+        yes = confirm('Is it raining oustide?')
         if (yes) {
             translate(10, 0)
             let yes = scenarios.mustConfirm()
@@ -26,10 +26,10 @@ const scenarios = {
         const answer = prompt('Write the correct answer')
 
         if (answer === correctAnswer) {
-            confirm('Congrats')
+            confirm('Congrats!')
 
         } else {
-            confirm('Nice try but you suck')
+            confirm('Nice try')
         }
     }
 }
