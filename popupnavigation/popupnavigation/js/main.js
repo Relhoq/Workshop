@@ -8,6 +8,9 @@ const imageSrc = {
   tree: "tree.jpeg",
   poster: "poster.svg",
   template: "FORMAT.jpg",
+  fond1: "FOND1.svg",
+  fond2: "FOND2.svg",
+  formage: "Formage.png",
 };
 let frameCount = 0;
 
@@ -26,10 +29,10 @@ const cv = document.querySelector("#canvas");
 const c = cv.getContext("2d");
 let width, height;
 
-cv.width = innerWidth;
-cv.height = innerHeight;
+cv.width = window.innerWidth;
+cv.height = window.innerHeight;
 
-const IMAGE = images.template;
+const IMAGE = images.fond2;
 IMAGE.classList.add("poster");
 
 document.body.appendChild(IMAGE);
@@ -39,7 +42,7 @@ resizeCanvas();
 requestAnimationFrame(animate);
 
 document.querySelector("#rotate").onclick = () => {
-  scenarios.askToTurnBy(180);
+  scenarios.askToTurnBy(Math.random(359));
   // const angle = prompt('rotate ?')
 
   // if (angle !== null) {
@@ -48,7 +51,6 @@ document.querySelector("#rotate").onclick = () => {
 };
 
 document.querySelector("#move").onclick = () => {
-  initCountdown(120);
   // const value = prompt('Zoom')
   // console.log(value);
   scenarios.meteo();
@@ -62,15 +64,19 @@ document.querySelector("#answer").onclick = () => {
 function animate() {
   c.save();
   c.resetTransform();
+  c.drawImage(images.fond1, 0, 0);
+  c.restore();
+
+  c.save();
+  c.resetTransform();
   c.fillStyle = "red";
   c.fillRect(0, 0, width, height);
   c.restore();
 
-  c.drawImage(images.tree, 0, 0);
-  setTransform(c.getTransform(cv.width, cv.height));
+  // setTransform(c.getTransform(0, 0));
 
   if (frameCount === 0) {
-    //setTransform(new DOMMatrix(initialTransform));
+    setTransform(new DOMMatrix(initialTransform));
   }
 
   frameCount++;
