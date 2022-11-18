@@ -22,18 +22,12 @@ canvas {
 }
 
 #divCountdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #141e30;
-  margin: auto;
+  /* font style */
   width: 375px;
   height: 100px;
   text-align: center;
   font-size: 70px;
-  font-style: normal;
   font-family: "TheinhardMed";
-  top: 53px;
   color: white;
   position: fixed;
   background-color: transparent;
@@ -54,17 +48,9 @@ canvas {
   font-family: "TheinhardMed";
   color: transparent;
   position: fixed;
-  background-color: transparent;
-  font-weight: 900;
-  text-shadow: 5px 4px 7px rgb(200, 200, 200);
-  outline: none;
+  font-style: normal;
   top: 39px;
-  position: fixed;
-  background-color: transparent;
-  text-shadow: 5px 5px 5px pink;
-  border-radius: 15px;
-  box-shadow: -15px -15px 15px (rgba(200, 200, 200, 0.2), 15px 15px 15px
-        rgba(0, 0, 0, 0.1));
+  font-family: "TheinhardMed";
 }
 
 .controls {
